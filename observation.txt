@@ -1,0 +1,8 @@
+Run1: 74
+Run2: 70
+Run3: 82
+Run4: 90
+Run5: 72
+
+Explanation:
+The result changes because multiple processes read and write inventory.txt at the same time. The OS scheduler runs them in unpredictable order, causing race conditions where updates overwrite each other.
